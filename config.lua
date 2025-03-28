@@ -405,7 +405,6 @@ Config.AddWaypoint = function (coords)
             end
         end
     end)
-    TriggerEvent("3d_waypoint:setWaypoint", coords)
 end
 
 Config.Locations = {
