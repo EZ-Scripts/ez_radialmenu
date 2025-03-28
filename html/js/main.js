@@ -29,13 +29,13 @@ function createMenu(items) {
         size: 375,
         menuItems: items,
         onClick: function (item) {
-            if (item.shouldClose) {
+            if (item.shouldClose ) {
                 EZRadialMenu.close(true);
             }
 
             if (item.items == null && item.shouldClose != null) {
                 $.post(
-                    "https://dda_radialmenu/selectItem",
+                    `https://${GetParentResourceName()}/selectItem`,
                     JSON.stringify({
                         itemData: item,
                     })

@@ -11,11 +11,11 @@ Config.MenuItems = {
         image = 'wheel.png',
         items = {
             {
-                id = 'mail',
-                title = 'Mail',
-                icon = "envelope-open",
+                id = 'emote',
+                title = 'Emotes',
+                icon = "face-smile",
                 type = 'command',
-                event = 'mail',
+                event = 'emotemenu',
                 shouldClose = true,
             },
         }
@@ -26,11 +26,19 @@ Config.MenuItems = {
         image = 'cowboy.png',
         items = {
             {
-                id = 'emote',
-                title = 'Emotes',
-                icon = "face-smile",
+                id = 'checkgun',
+                title = 'Inspect Gun',
+                icon = "gun",
                 type = 'command',
-                event = 'emotemenu',
+                event = 'checkgun',
+                shouldClose = true,
+            },
+            {
+                id = 'mail',
+                title = 'Mail',
+                icon = "envelope-open",
+                type = 'command',
+                event = 'mail',
                 shouldClose = true,
             },
             {
@@ -51,7 +59,7 @@ Config.MenuItems = {
                         title = 'Casual',
                         icon = 'person-walking',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -59,7 +67,7 @@ Config.MenuItems = {
                         title = 'Crazy',
                         icon = 'person-walking',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -67,7 +75,7 @@ Config.MenuItems = {
                         title = 'Drunk',
                         icon = 'beer-mug-empty',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -75,7 +83,7 @@ Config.MenuItems = {
                         title = 'Easy Rider',
                         icon = 'person-walking',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -83,7 +91,7 @@ Config.MenuItems = {
                         title = 'Flamboyant',
                         icon = 'person-walking',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -91,7 +99,7 @@ Config.MenuItems = {
                         title = 'Greenhorn',
                         icon = 'person-walking',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -99,7 +107,7 @@ Config.MenuItems = {
                         title = 'Gunslinger',
                         icon = 'gun',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -107,7 +115,7 @@ Config.MenuItems = {
                         title = 'Inquisitive',
                         icon = 'person-walking',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -115,7 +123,7 @@ Config.MenuItems = {
                         title = 'Refined',
                         icon = 'person-walking',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -123,7 +131,7 @@ Config.MenuItems = {
                         title = 'Silent Type',
                         icon = 'person-walking',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     },
                     {
@@ -131,7 +139,7 @@ Config.MenuItems = {
                         title = 'Veteran',
                         icon = 'person-walking-with-cane',
                         type = 'client',
-                        event = 'dda_radialmenu:client:walkanim',
+                        event = 'ez_radialmenu:client:walkanim',
                         shouldClose = true
                     }
                 }

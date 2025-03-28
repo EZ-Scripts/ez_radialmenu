@@ -108,20 +108,20 @@ local function setRadialState(bool, sendMessage, delay)
     -- Menuitems have to be added only once
     if Config.UseWhilstWalking then
         if bool then
-            TriggerEvent('dda_radialmenu:client:onRadialmenuOpen')
+            TriggerEvent('ez_radialmenu:client:onRadialmenuOpen')
             SetupRadialMenu()
             PlaySoundFrontend(-1, 'NAV', 'HUD_AMMO_SHOP_SOUNDSET', 1)
         else
-            TriggerEvent('dda_radialmenu:client:onRadialmenuClose')
+            TriggerEvent('ez_radialmenu:client:onRadialmenuClose')
         end
         SetNuiFocus(bool, bool)
         SetNuiFocusKeepInput(bool, true)
     else
         if bool then
-            TriggerEvent('dda_radialmenu:client:onRadialmenuOpen')
+            TriggerEvent('ez_radialmenu:client:onRadialmenuOpen')
             SetupRadialMenu()
         else
-            TriggerEvent('dda_radialmenu:client:onRadialmenuClose')
+            TriggerEvent('ez_radialmenu:client:onRadialmenuClose')
         end
         SetNuiFocus(bool, bool)
     end
@@ -150,6 +150,7 @@ end, false)
 -- Main Open Event
 CreateThread(function()
     while true do
+        --print(IsEntityInWater(PlayerPedId()), GetPlayerPedWaterDepth(PlayerPedId()) > 1, IsPedSwimming(PlayerPedId()))
         if IsControlJustReleased(0, Config.Keybind) then
             ExecuteCommand("radialmenu")
         end
@@ -205,7 +206,7 @@ end)
 exports('AddOption', AddOption)
 exports('RemoveOption', RemoveOption)
 
-RegisterNetEvent("dda_radialmenu:client:walkanim", function (data)
+RegisterNetEvent("ez_radialmenu:client:walkanim", function (data)
     TriggerEvent("vorp_walkanim:Client:setAnim", tostring(data.id))
 end)
 
